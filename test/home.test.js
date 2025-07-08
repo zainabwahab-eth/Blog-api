@@ -26,6 +26,6 @@ describe("Home Route", () => {
       .get("/undefined")
       .set("content-type", "application/json");
     expect(res.status).toBe(404);
-    expect(res.body.message).toBe("Route not found");
+    expect(res.body.message).toBe("Can't find /undefined on the server!");
   });
 });

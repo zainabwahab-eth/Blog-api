@@ -8,7 +8,6 @@ app.use(express.json());
 
 app.use("/users", userRoute);
 app.use("/blogs", blogRoute);
-// app.use("/", blogRoute);
 
 app.use(/.*/, (req, res) => {
   res.status(404).json({

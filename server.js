@@ -10,7 +10,7 @@ mongoose.connect(DB).then(() => {
   console.log("connection to mongodb successful");
 });
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`You're listening to port ${PORT}`);
 });
